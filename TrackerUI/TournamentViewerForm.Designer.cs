@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.tournamentLabel = new System.Windows.Forms.Label();
+            this.tournamentNameLabel = new System.Windows.Forms.Label();
             this.roundLabel = new System.Windows.Forms.Label();
             this.roundDropDown = new System.Windows.Forms.ComboBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.unplayedOnlyCheckBox = new System.Windows.Forms.CheckBox();
             this.matchupListBox = new System.Windows.Forms.ListBox();
             this.teamOneName = new System.Windows.Forms.Label();
             this.teamOneScoreLabel = new System.Windows.Forms.Label();
@@ -44,28 +44,28 @@
             this.scoreButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // tournamentLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Light", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.DarkTurquoise;
-            this.label1.Location = new System.Drawing.Point(31, 25);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(214, 50);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Tournament:";
+            this.tournamentLabel.AutoSize = true;
+            this.tournamentLabel.BackColor = System.Drawing.Color.White;
+            this.tournamentLabel.Font = new System.Drawing.Font("Segoe UI Light", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tournamentLabel.ForeColor = System.Drawing.Color.DarkTurquoise;
+            this.tournamentLabel.Location = new System.Drawing.Point(31, 25);
+            this.tournamentLabel.Name = "tournamentLabel";
+            this.tournamentLabel.Size = new System.Drawing.Size(214, 50);
+            this.tournamentLabel.TabIndex = 0;
+            this.tournamentLabel.Text = "Tournament:";
             // 
-            // label2
+            // tournamentNameLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Light", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.DarkTurquoise;
-            this.label2.Location = new System.Drawing.Point(251, 25);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(150, 50);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "<none>";
+            this.tournamentNameLabel.AutoSize = true;
+            this.tournamentNameLabel.Font = new System.Drawing.Font("Segoe UI Light", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tournamentNameLabel.ForeColor = System.Drawing.Color.DarkTurquoise;
+            this.tournamentNameLabel.Location = new System.Drawing.Point(251, 25);
+            this.tournamentNameLabel.Name = "tournamentNameLabel";
+            this.tournamentNameLabel.Size = new System.Drawing.Size(150, 50);
+            this.tournamentNameLabel.TabIndex = 1;
+            this.tournamentNameLabel.Text = "<none>";
             // 
             // roundLabel
             // 
@@ -86,18 +86,18 @@
             this.roundDropDown.Size = new System.Drawing.Size(199, 23);
             this.roundDropDown.TabIndex = 3;
             // 
-            // checkBox1
+            // unplayedOnlyCheckBox
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.checkBox1.Font = new System.Drawing.Font("Segoe UI Light", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.checkBox1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.checkBox1.Location = new System.Drawing.Point(174, 140);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(199, 41);
-            this.checkBox1.TabIndex = 4;
-            this.checkBox1.Text = "Unplayed Only";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.unplayedOnlyCheckBox.AutoSize = true;
+            this.unplayedOnlyCheckBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.unplayedOnlyCheckBox.Font = new System.Drawing.Font("Segoe UI Light", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.unplayedOnlyCheckBox.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.unplayedOnlyCheckBox.Location = new System.Drawing.Point(174, 140);
+            this.unplayedOnlyCheckBox.Name = "unplayedOnlyCheckBox";
+            this.unplayedOnlyCheckBox.Size = new System.Drawing.Size(199, 41);
+            this.unplayedOnlyCheckBox.TabIndex = 4;
+            this.unplayedOnlyCheckBox.Text = "Unplayed Only";
+            this.unplayedOnlyCheckBox.UseVisualStyleBackColor = true;
             // 
             // matchupListBox
             // 
@@ -209,11 +209,11 @@
             this.Controls.Add(this.teamOneScoreLabel);
             this.Controls.Add(this.teamOneName);
             this.Controls.Add(this.matchupListBox);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.unplayedOnlyCheckBox);
             this.Controls.Add(this.roundDropDown);
             this.Controls.Add(this.roundLabel);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.tournamentNameLabel);
+            this.Controls.Add(this.tournamentLabel);
             this.Name = "TournamentViewerForm";
             this.Text = "Tournament Viewer";
             this.ResumeLayout(false);
@@ -223,11 +223,11 @@
 
         #endregion
 
-        private Label label1;
-        private Label label2;
+        private Label tournamentLabel;
+        private Label tournamentNameLabel;
         private Label roundLabel;
         private ComboBox roundDropDown;
-        private CheckBox checkBox1;
+        private CheckBox unplayedOnlyCheckBox;
         private ListBox matchupListBox;
         private Label teamOneName;
         private Label teamOneScoreLabel;

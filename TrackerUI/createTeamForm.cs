@@ -21,5 +21,15 @@ namespace TrackerUI
         {
 
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void addNewMemberBox_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
